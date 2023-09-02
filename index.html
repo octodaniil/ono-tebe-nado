@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -27,38 +29,33 @@
           </ul>
         </nav>
 
-        <div class="header__logo">
-          <a
-            ><img
-              class="header__logo-image"
-              src="images/logo-black.svg"
-              alt="logo-black"
-          /></a>
-        </div>
+        <a class="header__logo"
+          ><img
+            class="header__logo-image"
+            src="images/logo-black.svg"
+            alt="Логотип"
+        /></a>
 
-        <address class="address header__address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <br />
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <br />
-          <a href=""
-            >наб. Принсенграхт 263-265,<br />
-            Амстердам</a
+        <address class="address header_address">
+          <a href="tel:+99995555555" class="address__phone">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="address__mail"
+            >info@sobaka.ge</a
           >
+          <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
       </header>
 
       <main class="main">
         <section class="cover">
-          <div class="filter__shell"></div>
+          <div class="overlay"></div>
           <h1 class="cover-title">
-            <span>О<span class="cover-title_first-word">но</span></span>
+            <span>О<span class="letter-spacing-extended">но</span></span>
             <span class="aligned-text_center"
-              >Те<span class="cover-title_second-word">бе</span></span
+              >Те<span class="letter-spacing-extended">бе</span></span
             >
-            <span class="aligned-text_end"
-              ><span class="cover-title_third-word">Н</span>ад<span
-                class="cover-title_fourth-word"
+            <span class="aligned-text_right"
+              ><span class="letter-spacing-extended">Н</span>ад<span
+                class="no-letter-spacing"
                 >о</span
               ></span
             >
@@ -69,7 +66,7 @@
               Аукцион вещей, в которые никто не верил
             </p>
 
-            <button class="bet__button">сделать ставку</button>
+            <button class="bet__button" type="button">сделать ставку</button>
           </div>
         </section>
 
@@ -80,7 +77,7 @@
             <li class="lots__card-list-item">
               <a href="" class="card__link"
                 ><article class="card card_type_film">
-                  <div class="filter__shell"></div>
+                  <div class="overlay"></div>
                   <h3 class="card__title">
                     Фильм режиссёра, который бросил киношколу
                   </h3>
@@ -95,7 +92,7 @@
             <li class="lots__card-list-item">
               <a href="" class="card__link"
                 ><article class="card card_type_book">
-                  <div class="filter__shell"></div>
+                  <div class="overlay"></div>
                   <h3 class="card__title">
                     Книга, где описан один скучный день из жизни рекламного
                     агента
@@ -114,7 +111,7 @@
             <li class="lots__card-list-item">
               <a href="" class="card__link"
                 ><article class="card card_type_picture">
-                  <div class="filter__shell"></div>
+                  <div class="overlay"></div>
                   <h3 class="card__title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
                   </h3>
@@ -129,7 +126,7 @@
             </li>
           </ul>
 
-          <a href="" class="lots__look-more-link">посмотреть больше</a>
+          <a href="#" class="lots__look-more-link">посмотреть больше</a>
         </section>
 
         <section class="about" id="about">
@@ -144,36 +141,35 @@
           </div>
           <div class="about__column__text">
             <h2 class="about__title">Об аукционе</h2>
-            <p class="about__text">
-              Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
-            </p>
-            <p class="about__text">
-              Слишком сложные или, наоборот, слишком простые. Опережающие своё
-              время. В пух и прах растерзанные критиками. Непринятые и
-              непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих
-              лотов невозможно представить современную культуру. Когда в эти
-              вещи не верил никто, продолжали верить их создатели. И сейчас эти
-              лоты стали культовыми.
-            </p>
+            <div class="about__text">
+              <p>
+                Здесь вы не встретите очередное пафосное собрание невероятно
+                дорогого антиквариата. Наши лоты вообще не должны были попасть
+                ни на один аукцион. Потому что кому нужен дневник
+                девочки-подростка или картина, которую может нарисовать даже
+                ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+              </p>
+              <p>
+                Слишком сложные или, наоборот, слишком простые. Опережающие своё
+                время. В пух и прах растерзанные критиками. Непринятые и
+                непонятые. Когда-то они казались просто неудачными. Но, несмотря
+                на критику, кажущуюся простоту или сложность, сейчас без этих
+                лотов невозможно представить современную культуру. Когда в эти
+                вещи не верил никто, продолжали верить их создатели. И сейчас
+                эти лоты стали культовыми.
+              </p>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <address class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <br />
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <br />
-          <a href=""
-            >наб. Принсенграхт 263-265,<br />
-            Амстердам</a
+          <a href="tel:+99995555555" class="address__phone">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="address__mail"
+            >info@sobaka.ge</a
           >
+          <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
 
         <nav class="footer__menu">
